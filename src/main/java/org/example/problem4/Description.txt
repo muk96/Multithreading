@@ -1,0 +1,12 @@
+Implement a program that uses a countdown latch to wait for all threads to finish executing before
+proceeding to the next step.
+
+In a multi-threaded program, it is common to have multiple threads running in parallel
+ and performing different tasks concurrently. However, sometimes it may be necessary
+ to wait for all the threads to finish executing before proceeding with the next step of the program.
+  This can be achieved using a CountDownLatch.
+
+A CountDownLatch is a synchronization primitive that allows one or more threads to wait
+ until a set of operations being performed in other threads completes. It works by initializing the
+ latch with a count, and each thread that needs to wait on the latch decrements the count when it completes its work.
+When the count reaches zero, the waiting threads are released and can continue their work.

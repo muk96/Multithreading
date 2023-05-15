@@ -1,0 +1,1 @@
+Write a program that uses a semaphore to limit the number of threads that can access a shared resource simultaneously.
